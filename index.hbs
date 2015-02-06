@@ -14,22 +14,24 @@
 
         <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
 
-        <section class="post-meta">
+   {{!--      <section class="post-meta">
             <span class="post-time">
                 <i class='fa fa-calendar'></i>
                 <time datetime="{{date format="YYYY-MM-DD"}}" class="timeago">{{date timeago="true"}}</time>
                 <time datetime="{{date format="YYYY-MM-DD"}}" class="fulldate">{{date format="MMMM Do, YYYY"}}</time>
             </span>
             {{tags prefix="<br><i class='fa fa-tag'></i> " separator=" · "}}
-        </section>
+        </section> --}}
     </header>
     <div class="post-preview">
         <aside class="col-aside">
             <span class="post-meta">
+                <i class='fa fa-calendar'></i>
                 <time class="post-item-time" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
                 <p class="post-item-tags"><i class="fa fa-tags"></i> {{tags separator=", "}}</p>
             </span>
         </aside>
+        <span></span>
         <section class="post-excerpt">
             <p>{{excerpt words="35"}}&hellip;</p>
             <a class="btn" href="{{url}}">Read More</a>
