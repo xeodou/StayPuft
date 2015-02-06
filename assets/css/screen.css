@@ -510,6 +510,7 @@ margin on the iframe, cause it breaks stuff. */
     font-family: 'Open Sans', sans-serif;
     text-shadow: 0 1px 6px rgba(0,0,0,0.1);
     text-indent: 0px;
+    text-align: center;
 }
 
 .blog-title a {
