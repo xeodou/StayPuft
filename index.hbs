@@ -13,7 +13,7 @@
         {{/if}}
 
         <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
-        
+
         <section class="post-meta">
             <span class="post-time">
                 <i class='fa fa-calendar'></i>
@@ -23,12 +23,18 @@
             {{tags prefix="<br><i class='fa fa-tag'></i> " separator=" · "}}
         </section>
     </header>
-    <section class="post-content">
-        {{content}}
-    </section>
-    <footer class="post-indexfooter">
-        <i class="fa fa-comment-o"></i> <a href="{{url}}#disqus_thread">Comments</a>
-    </footer>
+    <div class="post-preview">
+        <aside class="col-aside">
+            <span class="post-meta">
+                <time class="post-item-time" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+                <p class="post-item-tags"><i class="fa fa-tags"></i> {{tags separator=", "}}</p>
+            </span>
+        </aside>
+        <section class="post-excerpt">
+            <p>{{excerpt words="35"}}&hellip;</p>
+            <a class="btn" href="{{url}}">Read More</a>
+        </section>
+    </div>
 </article>
 
 {{/foreach}}
